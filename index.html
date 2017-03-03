@@ -4,9 +4,144 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
+
   <body>
+    <header class="main-header">
+      <h1 class="main-header__logo">Pink</h1>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </nav>
 
+      <div class="download-app">
+        <a href="http://www.apple.com/ru/itunes/" class="download-app__btn">Скачать приложение</a>
+
+        <div class="download-app__list">
+          <a href="http://www.apple.com/ru/itunes/" class="download-app__item-ios">Скачать приложение для ios</a>
+          <a href="https://play.google.com/store" class="download-app__item-android">Скачать проиложение для android</a>
+          <a href="https://www.microsoft.com/en-us/store/apps" class="download-app__item-windows">Скачать приложение для windows</a>
+        </div>
+
+        <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="index-slogan">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </section>
+
+      <section class="features">
+        <div class="features__item">
+          <h2 class="features__title">Поднимает настроение</h2>
+          <p class="features__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+
+        <div class="features__item">
+          <h2 class="features__title">Меняет мир вокруг</h2>
+          <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+
+        <div class="features__item">
+          <h2 class="features__title">Заводит новых друзей</h2>
+          <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <article class="reviews__item">
+          <p class="reviews__name">Николай Петров</p>
+          <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+        </article>
+
+        <article class="reviews__item">
+          <p class="reviews__name">Василий Иванович</p>
+          <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+        </article>
+
+        <article class="reviews__item">
+          <p class="reviews__name">Максим Сидоров</p>
+          <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+        </article>
+
+        <div class="reviews__control">
+          <button class="reviews__control-btn reviews__control-btn--active" id="slide-reviews-1" type="button">1</button>
+          <button id="slide-reviews-2" type="button">2</button>
+          <button id="slide-reviews-3" type="button">3</button>
+        </div>
+      </section>
+
+      <section class="tariff">
+        <table class="tariff__table">
+          <tr>
+            <th>
+              <span class="tariff__name">Базовый</span>
+              <span class="tariff__price">1,99 USD</span>
+            </th>
+            <th class="tariff__header tariff__header--hit">
+              <span class="tariff__name">Стандарт</span>
+              <span class="tariff__price">3,99 USD</span>
+            </th>
+            <th>
+              <span class="tariff__name">Полный набор</span>
+              <span class="tariff__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
+            <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
+            <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="tariff__cell tariff__cell--check-off">Смайлики</td>
+            <td class="tariff__cell tariff__cell--check-on">Смайлики</td>
+            <td class="tariff__cell tariff__cell--check-on">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="tariff__cell tariff__cell--check-off">Комментарии</td>
+            <td class="tariff__cell tariff__cell--check-off">Комментарии</td>
+            <td class="tariff__cell tariff__cell--check-on">Комментарии</td>
+          </tr>
+        </table>
+
+        <div class="tariff__control">
+          <button id="slide-tariff-1" type="button">1</button>
+          <button class="tariff__control-btn tariff__control-btn--active"id="slide-tariff-2" type="button">2</button>
+          <button id="slide-tariff-3" type="button">3</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__title">Остались вопросы? Свяжитесь с нами!</div>
+
+      <div class="contacts">
+        <div class="contacts__item">
+          <span class="contacts__title">Звоните:</span>
+          <span class="contacts__info">+7(812)555-66-66</span>
+        </div>
+
+        <div class="contacts__item">
+          <span class="contacts__title">Пишите:</span>
+          <span class="contacts__info">mail@htmlacademy.ru</span>
+        </div>
+
+        <div class="contacts__item">
+          <span class="contacts__title">Приезжайте в гости:</span>
+          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+
+      <div class="main-footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.38711253488293!2d30.322949712665956!3d59.938734138701186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488533457790" width="100%" height=auto frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </footer>
   </body>
 </html>
