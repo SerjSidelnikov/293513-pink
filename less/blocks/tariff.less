@@ -42,6 +42,7 @@
 
 
 .tariff__cell {
+  position: relative;
   padding: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -51,11 +52,21 @@
   text-align: left;
   border: 2px solid #f2f2f2;
 
-  &--check-on {
-    background: #ffffff url("../img/icon-yes.svg") no-repeat 235px center;
+  &--check-on::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff url("../img/icon-yes.svg") no-repeat center;
   }
 
-  &--check-off {
-    background: #ffffff url("../img/icon-no.svg") no-repeat 235px center;
+  &--check-off::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff url("../img/icon-no.svg") no-repeat center;
   }
 }
