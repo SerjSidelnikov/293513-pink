@@ -14,26 +14,21 @@
   font-size: 0;
 }
 
-.download-app__item-ios {
+.download-app__item {
   width: 48px;
   height: 57px;
-  background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
 
-.download-app__item-android {
-  width: 48px;
-  height: 57px;
-  background-image: url("../img/logo-android.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--ios {
+    background-image: url("../img/logo-apple.svg");
+  }
 
-.download-app__item-windows {
-  width: 48px;
-  height: 57px;
-  background-image: url("../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  &--android {
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--windows {
+    background-image: url("../img/logo-microsoft.svg");
+  }
 }
