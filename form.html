@@ -11,20 +11,22 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <div class="main-nav__control">
-          <div class="main-header__logo">
-            <a href="index.html">
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
-            </a>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__control">
+            <div class="main-header__logo">
+              <a href="index.html">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+              </a>
+            </div>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
           </div>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
+            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
         </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
-          <li class="main-nav__item"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
       </nav>
 
       <div class="main-header__bottom">
@@ -142,5 +144,7 @@
         <button class="modal-content__btn" type="button">Ок</button>
       </div>
     </section>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
