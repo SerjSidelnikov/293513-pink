@@ -1,0 +1,72 @@
+.tariff {
+  padding-top: 90px;
+  padding-bottom: 45px;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
+  background-size: contain;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid fuchsia;
+  overflow: hidden;
+}
+
+.tariff__table {
+  width: 825px;
+  border-collapse: collapse;
+  transform: translateX(-260px);
+}
+
+.tariff__table th {
+  width: 275px;
+  padding: 18px 0;
+  color: #ffffff;
+  background-color: #283645;
+  border: 2px solid #f2f2f2;
+}
+
+.tariff__name {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.tariff__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.tariff__header--hit {
+  background: url("../img/bg-hit.svg") no-repeat top left;
+}
+
+
+.tariff__cell {
+  position: relative;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  background: #ffffff;
+  text-align: left;
+  border: 2px solid #f2f2f2;
+
+  &--check-on::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff url("../img/icon-yes.svg") no-repeat center;
+  }
+
+  &--check-off::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff url("../img/icon-no.svg") no-repeat center;
+  }
+}

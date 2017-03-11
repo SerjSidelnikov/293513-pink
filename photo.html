@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
-      <div class="main-header__logo"><a href="index.html">Pink</a></div>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__control">
+          <div class="main-header__logo">
+            <a href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a>Фотография</a></li>
@@ -19,7 +25,9 @@
         </ul>
       </nav>
 
-      <h1 class="main-header__title">Фотографии пользователей</h1>
+      <div class="main-header__bottom">
+        <h1 class="main-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
 
     <main class="page-photo">
@@ -28,7 +36,7 @@
       <section class="photo-gallery">
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img gallery-post__img--panorama">
-            <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Панорама">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
           </div>
 
           <div class="gallery-post__description">
@@ -44,7 +52,7 @@
 
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img">
-            <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="Машина">
+            <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Машина">
           </div>
 
           <div class="gallery-post__description">
@@ -60,7 +68,7 @@
 
         <article class="photo-gallery__item gallery-post">
             <div class="gallery-post__img">
-              <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабаны">
+              <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
             </div>
 
             <div class="gallery-post__description">
@@ -76,7 +84,7 @@
 
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img">
-            <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Стеклянная крыша">
+            <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша">
           </div>
 
           <div class="gallery-post__description">
@@ -92,7 +100,7 @@
 
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img">
-            <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
+            <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
           </div>
 
           <div class="gallery-post__description">
@@ -108,7 +116,7 @@
 
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img">
-            <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="На горе">
+            <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="На горе">
           </div>
 
           <div class="gallery-post__description">
@@ -124,7 +132,7 @@
 
         <article class="photo-gallery__item gallery-post">
           <div class="gallery-post__img">
-            <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид из окна самолёта">
+            <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Вид из окна самолёта">
           </div>
 
           <div class="gallery-post__description">
@@ -139,12 +147,12 @@
         </article>
       </section>
 
-      <div class="page-photo__promo">Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</div>
+      <div class="page-photo__promo">Затмите их всех!<br> Выкладывайте всё, что накопилось в телефоне!</div>
 
       <section class="photo-editor">
         <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="photo-editor__img">
-            <img src="img/photo-7-mobile" width="280" height="374" alt="Зима">
+            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Зима">
           </div>
 
           <div class="photo-editor__form-setting">
@@ -164,17 +172,17 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__logo"><img src="img/logo-footer.svg" alt="Pink">Pink</div>
+    <footer class="inner-footer">
+      <div class="inner-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="Pink"></div>
 
-      <section class="main-footer__social">
-        <a class="main-footer__social-btn main-footer__social-btn--tw" href="#">Твиттер</a>
-        <a class="main-footer__social-btn main-footer__social-btn--fb" href="#">Фейсбук</a>
-        <a class="main-footer__social-btn main-footer__social-btn--yt" href="#">YouTube</a>
+      <section class="inner-footer__social">
+        <a class="inner-footer__social-btn inner-footer__social-btn--tw" href="#">Твиттер</a>
+        <a class="inner-footer__social-btn inner-footer__social-btn--fb" href="#">Фейсбук</a>
+        <a class="inner-footer__social-btn inner-footer__social-btn--yt" href="#">YouTube</a>
       </section>
 
-      <section class="main-footer__copyright">
-        Разработано<a href="https://htmlacademy.ru"><img src="img/footer-copyright.svg" alt="HTML Academy"></a>
+      <section class="inner-footer__copyright">
+        Разработано<a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="30" height="35" alt="HTML Academy"></a>
       </section>
     </footer>
 

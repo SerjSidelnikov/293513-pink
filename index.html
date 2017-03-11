@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
-      <h1 class="main-header__logo">Pink</h1>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__control">
+          <h1 class="main-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+          </h1>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
@@ -19,13 +23,15 @@
         </ul>
       </nav>
 
+      <div class="main-header__bottom main-header__bottom--index"></div>
+
       <div class="download-app">
         <a href="http://www.apple.com/ru/itunes/" class="download-app__btn">Скачать приложение</a>
 
         <div class="download-app__list">
-          <a href="http://www.apple.com/ru/itunes/" class="download-app__item-ios">Скачать приложение для ios</a>
-          <a href="https://play.google.com/store" class="download-app__item-android">Скачать проиложение для android</a>
-          <a href="https://www.microsoft.com/en-us/store/apps" class="download-app__item-windows">Скачать приложение для windows</a>
+          <a href="http://www.apple.com/ru/itunes/" class="download-app__item download-app__item--ios">Скачать приложение для ios</a>
+          <a href="https://play.google.com/store" class="download-app__item download-app__item--android">Скачать проиложение для android</a>
+          <a href="https://www.microsoft.com/en-us/store/apps" class="download-app__item download-app__item--windows">Скачать приложение для windows</a>
         </div>
 
         <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8</p>
@@ -113,7 +119,7 @@
 
         <div class="tariff__control">
           <button id="slide-tariff-1" type="button">1</button>
-          <button class="tariff__control-btn tariff__control-btn--active"id="slide-tariff-2" type="button">2</button>
+          <button class="tariff__control-btn tariff__control-btn--active" id="slide-tariff-2" type="button">2</button>
           <button id="slide-tariff-3" type="button">3</button>
         </div>
       </section>
