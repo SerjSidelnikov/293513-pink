@@ -1,17 +1,21 @@
 .main-nav {
   position: relative;
-  margin-bottom: -64px;
+  margin-bottom: -66px;
+  background-color: #283645;
+
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-nav__control {
   display: flex;
   justify-content: space-between;
   padding: 23px 20px;
-  background-color: #283645;
   box-shadow: 0 1px #000000;
 
   &--closed {
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 21px 20px;
     box-shadow: none;
   }
 }
@@ -23,7 +27,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  background-color: #283645;
   text-align: center;
   text-transform: uppercase;
   list-style: none;
@@ -64,7 +67,6 @@
   }
 
   .main-nav__control {
-    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: none;
   }
 
@@ -78,7 +80,6 @@
     flex-wrap: wrap;
     align-items: center;
     width: 625px;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-nav__list a {
