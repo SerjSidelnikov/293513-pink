@@ -3,39 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <div class="main-nav__control">
-          <h1 class="main-header__logo">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
-          </h1>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__control main-nav__control--closed">
+            <h1 class="main-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+            </h1>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+          <ul class="main-nav__list main-nav__list--closed">
+            <li class="main-nav__item"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
         </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотография</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
       </nav>
 
-      <div class="main-header__bottom main-header__bottom--index"></div>
+      <div class="main-header__bottom main-header__bottom--index">
+        <div class="main-header__wrapper">
+          <h1 class="main-header__title visually-hidden">Взгляните на жизнь иначе!</h1>
 
-      <div class="download-app">
-        <a href="http://www.apple.com/ru/itunes/" class="download-app__btn">Скачать приложение</a>
+          <div class="download-app">
+            <a href="http://www.apple.com/ru/itunes/" class="download-app__btn">Скачать приложение</a>
 
-        <div class="download-app__list">
-          <a href="http://www.apple.com/ru/itunes/" class="download-app__item download-app__item--ios">Скачать приложение для ios</a>
-          <a href="https://play.google.com/store" class="download-app__item download-app__item--android">Скачать проиложение для android</a>
-          <a href="https://www.microsoft.com/en-us/store/apps" class="download-app__item download-app__item--windows">Скачать приложение для windows</a>
+            <div class="download-app__list">
+              <a href="http://www.apple.com/ru/itunes/" class="download-app__item download-app__item--ios">Скачать приложение для ios</a>
+              <a href="https://play.google.com/store" class="download-app__item download-app__item--android">Скачать проиложение для android</a>
+              <a href="https://www.microsoft.com/en-us/store/apps" class="download-app__item download-app__item--windows">Скачать приложение для windows</a>
+            </div>
+
+            <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8</p>
+          </div>
         </div>
-
-        <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8</p>
       </div>
+
+
     </header>
 
     <main>
