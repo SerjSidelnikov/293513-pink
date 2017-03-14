@@ -9,6 +9,13 @@ var button = menu.querySelector(".main-nav__toggle");
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
+  if (button.classList.contains("main-nav__toggle--closed")) {
+    button.classList.remove("main-nav__toggle--closed");
+    button.classList.add("main-nav__toggle--opened");
+  } else {
+    button.classList.remove("main-nav__toggle--opened");
+    button.classList.add("main-nav__toggle--closed");
+  }
   menu.classList.toggle("main-nav--closed");
   menuControl.classList.toggle("main-nav__control--closed");
   menuList.classList.toggle("main-nav__list--closed");
