@@ -54,37 +54,52 @@
       </section>
 
       <section class="features">
-        <div class="features__item">
-          <h2 class="features__title">Поднимает настроение</h2>
-          <p class="features__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
+        <div class="features__wrapper">
+          <div class="features__item">
+            <h2 class="features__title">Поднимает настроение</h2>
+            <p class="features__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
 
-        <div class="features__item">
-          <h2 class="features__title">Меняет мир вокруг</h2>
-          <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
+          <div class="features__item">
+            <h2 class="features__title">Меняет мир вокруг</h2>
+            <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
 
-        <div class="features__item">
-          <h2 class="features__title">Заводит новых друзей</h2>
-          <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <div class="features__item">
+            <h2 class="features__title">Заводит новых друзей</h2>
+            <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-effect">
+        <div class="features-effect__wrapper">
+          <h2 class="features-effect__title">Эффект на 24 часа!</h2>
+          <p class="features-effect__content">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="features-effect__href" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
 
       <section class="reviews">
         <article class="reviews__item">
           <p class="reviews__name">Николай Петров</p>
+          <p class="reviews__age">25 лет, водитель трамвая</p>
           <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
         </article>
 
         <article class="reviews__item">
           <p class="reviews__name">Василий Иванович</p>
+          <p class="reviews__age">25 лет, водитель трамвая</p>
           <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
         </article>
 
         <article class="reviews__item">
           <p class="reviews__name">Максим Сидоров</p>
+          <p class="reviews__age">25 лет, водитель трамвая</p>
           <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сеыре вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
         </article>
+        <button class="reviews__slide reviews__slide--prev" type="button">prev</button>
+        <button class="reviews__slide reviews__slide--next" type="button">next</button>
 
         <div class="reviews__control">
           <button class="reviews__control-btn reviews__control-btn--active" id="slide-reviews-1" type="button">1</button>
@@ -96,8 +111,9 @@
       <section class="tariff">
         <table class="tariff__table">
           <tr>
+            <th class="tariff__empty tariff__empty--th"></th>
             <th>
-              <span class="tariff__name">Базовый</span>
+              <span class="tariff__name">База</span>
               <span class="tariff__price">1,99 USD</span>
             </th>
             <th class="tariff__header tariff__header--hit">
@@ -105,21 +121,24 @@
               <span class="tariff__price">3,99 USD</span>
             </th>
             <th>
-              <span class="tariff__name">Полный набор</span>
+              <span class="tariff__name">Анлим</span>
               <span class="tariff__price">9,99 USD</span>
             </th>
           </tr>
           <tr>
+            <td class="tariff__cell tariff__cell--check-on tariff__empty">Розовый фильтр</td>
             <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
             <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
             <td class="tariff__cell tariff__cell--check-on">Розовый фильтр</td>
           </tr>
           <tr>
+            <td class="tariff__cell tariff__cell--check-off tariff__empty">Смайлики</td>
             <td class="tariff__cell tariff__cell--check-off">Смайлики</td>
             <td class="tariff__cell tariff__cell--check-on">Смайлики</td>
             <td class="tariff__cell tariff__cell--check-on">Смайлики</td>
           </tr>
           <tr>
+            <td class="tariff__cell tariff__cell--check-off tariff__empty">Комментарии</td>
             <td class="tariff__cell tariff__cell--check-off">Комментарии</td>
             <td class="tariff__cell tariff__cell--check-off">Комментарии</td>
             <td class="tariff__cell tariff__cell--check-on">Комментарии</td>
@@ -156,6 +175,20 @@
 
       <div class="main-footer__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.38711253488293!2d30.322949712665956!3d59.938734138701186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488533457790" width="100%" height=auto frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="main-footer__bottom inner-footer">
+        <div class="inner-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="Pink"></div>
+
+        <section class="inner-footer__social">
+          <a class="inner-footer__social-btn inner-footer__social-btn--tw" href="#">Твиттер</a>
+          <a class="inner-footer__social-btn inner-footer__social-btn--fb" href="#">Фейсбук</a>
+          <a class="inner-footer__social-btn inner-footer__social-btn--yt" href="#">YouTube</a>
+        </section>
+
+        <section class="inner-footer__copyright">
+          Разработано<a href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="30" height="35" alt="HTML Academy"></a>
+        </section>
       </div>
     </footer>
 
