@@ -1,0 +1,32 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .visually-hidden {
+    position: static;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding-top: 210px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .visually-hidden {
+    width: 240px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

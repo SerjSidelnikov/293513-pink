@@ -7,12 +7,14 @@
 .main-header__bottom {
   min-height: 235px;
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
-}
 
-.main-header__bottom-iphone {
-  .container();
-  height: 461px;
-  background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left 175px;
+  &--iphone::before {
+    content: '';
+    display: block;
+    .container();
+    height: 461px;
+    background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left 175px;
+  }
 }
 
 .main-header__logo {
@@ -30,17 +32,6 @@
   line-height: 34px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
-
 @media (min-width: 700px) {
 
   .main-header__bottom {
@@ -49,15 +40,24 @@
     background-size: 1100px;
 
     &--index {
+      position: relative;
+      min-height: 730px;
       padding: 0 40px;
       background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center;
       background-size: 1300px;
     }
+
+    &--iphone::before {
+      content: none;
+    }
   }
 
   .main-header__wrapper {
-    position: relative;
-    min-height: 730px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    right: 40px;
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat right bottom;
     background-size: 500px;
   }
@@ -72,27 +72,17 @@
     padding-top: 180px;
     font-size: 50px;
     line-height: 65px;
-  }
 
-  .visually-hidden {
-    position: static;
-    width: 200px;
-    height: auto;
-    margin: 0;
-    padding-top: 210px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 40px;
-    line-height: 52px;
-    overflow: visible;
-    clip: auto;
+    &--index {
+      font-size: 40px;
+      line-height: 52px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .main-header__wrapper {
     .container();
-    min-height: 850px;
   }
 
   .main-header__bottom {
@@ -101,8 +91,14 @@
     background-size: 2000px;
 
     &--index {
+      min-height: 850px;
       padding: 0 130px;
     }
+  }
+
+  .main-header__title--index {
+    font-size: 50px;
+    line-height: 65px;
   }
 
   .main-header__title--form {
