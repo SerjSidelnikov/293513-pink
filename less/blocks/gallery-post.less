@@ -72,6 +72,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 25px;
     min-height: 155px;
     box-sizing: border-box;
 
@@ -103,13 +104,26 @@
     }
 
     &::before {
-      left: 250px;
+      left: 92%;
       top: 3px;
     }
 
     &--panorama::before {
       left: 100px;
       top: 3px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-post {
+    margin-bottom: 50px;
+  }
+
+  .gallery-post__description {
+
+    &--panorama {
+      .container();
     }
   }
 }
