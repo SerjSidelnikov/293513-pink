@@ -22,3 +22,39 @@
   background-color: #f2f2f2;
   text-align: left;
 }
+
+.gallery-post__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery-post__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.gallery-post__content {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.gallery-post__like {
+  position: relative;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../../img/icon-heart.svg") no-repeat center;
+  }
+}

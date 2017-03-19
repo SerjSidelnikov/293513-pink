@@ -160,17 +160,18 @@
           </div>
 
           <div class="photo-editor__form-setting">
-            <button class="photo-editor__btn-crop" type="button">Подрезать</button>
-            <button class="photo-editor__btn-fill" type="button">Заливка</button>
-            <button class="photo-editor__btn-contrast" type="button">Контраст</button>
+            <button class="photo-editor__setting photo-editor__setting--crop" type="button">Подрезать</button>
+            <button class="photo-editor__setting photo-editor__setting--fill" type="button">Заливка</button>
+            <button class="photo-editor__setting photo-editor__setting--contrast" type="button">Контраст</button>
             <div class="photo-editor__range-control">
-              <input type="range">
+              <div class="photo-editor__range-bar"></div>
+              <div class="photo-editor__range-toggle"></div>
             </div>
           </div>
 
-          <div class="photo-editor__btn">
-            <button type="submit">Запостить</button>
-            <button type="reset">Отмена</button>
+          <div class="photo-editor__btn-block">
+            <button class="photo-editor__btn photo-editor__btn--post" type="submit">Запостить</button>
+            <button class="photo-editor__btn photo-editor__btn--esc" type="reset">Отмена</button>
           </div>
         </form>
       </section>
