@@ -1,3 +1,29 @@
 .photo-gallery {
   margin-bottom: 35px;
 }
+
+@media (min-width: 700px) {
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .photo-gallery__item {
+    width: (300 / 700) * 100%;
+    box-sizing: border-box;
+
+    &:nth-child(even) {
+      margin-left: 40px;
+    }
+
+    &:nth-child(n+3):nth-child(odd) {
+      margin-right: 40px;
+    }
+
+    &--panorama {
+      width: 100%;
+    }
+  }
+}

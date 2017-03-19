@@ -38,19 +38,19 @@
       <div class="page-photo__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
 
       <section class="photo-gallery">
-        <article class="photo-gallery__item gallery-post">
+        <article class="photo-gallery__item photo-gallery__item--panorama gallery-post">
           <div class="gallery-post__img gallery-post__img--panorama">
             <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
           </div>
 
-          <div class="gallery-post__description">
+          <div class="gallery-post__description gallery-post__description--panorama">
             <div class="gallery-post__title">
               <span class="gallery-post__name">Анна</span>
               <span class="gallery-post__time">(5 минут назад)</span>
             </div>
 
-            <p class="gallery-post__content">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="gallery-post__like">Нравится: 215</span>
+            <p class="gallery-post__content gallery-post__content--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="gallery-post__like gallery-post__like--panorama">Нравится: 215</span>
           </div>
         </article>
 
@@ -160,18 +160,39 @@
           </div>
 
           <div class="photo-editor__form-setting">
-            <button class="photo-editor__setting photo-editor__setting--crop" type="button">Подрезать</button>
-            <button class="photo-editor__setting photo-editor__setting--fill" type="button">Заливка</button>
-            <button class="photo-editor__setting photo-editor__setting--contrast" type="button">Контраст</button>
+            <div class="photo-editor__wrapper">
+              <button class="photo-editor__setting photo-editor__setting--crop" type="button">Подрезать</button>
+              <div class="photo-editor__range-control photo-editor__range-control--crop">
+                <div class="photo-editor__range-bar"></div>
+                <div class="photo-editor__range-toggle"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__wrapper">
+              <button class="photo-editor__setting photo-editor__setting--fill" type="button">Заливка</button>
+              <div class="photo-editor__range-control photo-editor__range-control--fill">
+                <div class="photo-editor__range-bar"></div>
+                <div class="photo-editor__range-toggle"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__wrapper">
+              <button class="photo-editor__setting photo-editor__setting--contrast" type="button">Контраст</button>
+              <div class="photo-editor__range-control photo-editor__range-control--contrast">
+                <div class="photo-editor__range-bar"></div>
+                <div class="photo-editor__range-toggle"></div>
+              </div>
+            </div>
+
             <div class="photo-editor__range-control">
               <div class="photo-editor__range-bar"></div>
               <div class="photo-editor__range-toggle"></div>
             </div>
-          </div>
 
-          <div class="photo-editor__btn-block">
-            <button class="photo-editor__btn photo-editor__btn--post" type="submit">Запостить</button>
-            <button class="photo-editor__btn photo-editor__btn--esc" type="reset">Отмена</button>
+            <div class="photo-editor__btn-block">
+              <button class="photo-editor__btn photo-editor__btn--post" type="submit">Запостить</button>
+              <button class="photo-editor__btn photo-editor__btn--esc" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
