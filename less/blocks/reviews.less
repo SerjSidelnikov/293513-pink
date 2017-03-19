@@ -59,6 +59,12 @@
   .reviews {
     .container();
     position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 120px;
+    }
   }
 
   .reviews__item {
@@ -67,7 +73,7 @@
 
   .reviews__slide {
     position: absolute;
-    top: 25px;
+    bottom: 120px;
     display: block;
 
     &--prev {
