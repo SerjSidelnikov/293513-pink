@@ -1,6 +1,5 @@
 .main-footer {
   text-align: center;
-  border: 1px solid red;
 }
 
 .main-footer__title {
@@ -13,4 +12,32 @@
 
 .main-footer__map {
   background: #e8e5df url("../img/bg-map-mobile@1x.png") no-repeat;
+}
+
+.main-footer__bottom {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .main-footer__title {
+    padding: 50px 120px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .main-footer__map {
+    height: 380px;
+  }
+
+  .main-footer__bottom {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer__title {
+    padding: 70px 240px;
+    font-size: 50px;
+    line-height: 65px;
+  }
 }

@@ -5,18 +5,20 @@
   background-size: contain;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid fuchsia;
   overflow: hidden;
 }
 
 .tariff__table {
-  width: 825px;
   border-collapse: collapse;
-  transform: translateX(-260px);
+  transform: translateX(-32%);
+}
+
+.tariff__empty {
+  display: none;
 }
 
 .tariff__table th {
-  width: 275px;
+  min-width: 90vw;
   padding: 18px 0;
   color: #ffffff;
   background-color: #283645;
@@ -68,5 +70,88 @@
     width: 35px;
     height: 35px;
     background: #ffffff url("../img/icon-no.svg") no-repeat center;
+  }
+}
+
+@media (min-width: 700px) {
+  .tariff__table {
+    width: 620px;
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+
+  .tariff__empty {
+    display: table-cell;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .tariff__table th {
+    min-width: 155px;
+  }
+
+  .tariff__table th:first-child {
+    background-color: transparent;
+  }
+
+  .tariff__name {
+    font-size: 16px;
+  }
+
+  .tariff__price {
+    font-size: 18px;
+  }
+
+  .tariff__cell:not(.tariff__empty) {
+    font-size: 0;
+  }
+
+  .tariff__cell {
+    padding: 10px;
+    text-transform: none;
+
+    &--check-on::before,
+    &--check-off::before {
+      left: 60px;
+      bottom: 10px;
+    }
+  }
+
+  .tariff__control {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tariff {
+    padding-top: 150px;
+  }
+
+  .tariff__table {
+    width: 940px;
+  }
+
+  .tariff__table th {
+    width: 235px;
+  }
+
+  .tariff__name {
+    font-size: 18px;
+  }
+
+  .tariff__price {
+    font-size: 24px;
+  }
+
+  .tariff__cell {
+    padding: 15px 20px;
+
+    &--check-on::before,
+    &--check-off::before {
+      left: 100px;
+      bottom: 10px;
+    }
   }
 }

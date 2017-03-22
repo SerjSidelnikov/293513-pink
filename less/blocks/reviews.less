@@ -5,7 +5,13 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
-  border: 1px solid blueviolet;
+}
+
+.reviews__item {
+
+  &:nth-child(n+2) {
+    display: none;
+  }
 }
 
 .reviews__name {
@@ -13,4 +19,73 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+.reviews__age {
+  display: none;
+}
+
+.reviews__slide {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .reviews {
+    padding: 0 40px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__name {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .reviews__age {
+    display: block;
+    margin: 0;
+  }
+
+  .reviews__content {
+    font-size: 18px;
+    order: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    .container();
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 120px;
+    }
+  }
+
+  .reviews__item {
+    padding: 0 130px;
+  }
+
+  .reviews__slide {
+    position: absolute;
+    bottom: 120px;
+    display: block;
+
+    &--prev {
+      left: 10px;
+    }
+
+    &--next {
+      right: 10px;
+    }
+  }
+
+  .reviews__control {
+    display: none;
+  }
 }

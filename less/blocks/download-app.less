@@ -1,16 +1,33 @@
 .download-app {
-  padding: 25px 20px;
+  .container();
+  padding: 25px 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   background-color: #1d2631;
-  border: 1px solid yellow;
+}
+
+.download-app__btn {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 13px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .download-app__list {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 35px;
   font-size: 0;
 }
 
@@ -30,5 +47,24 @@
 
   &--windows {
     background-image: url("../img/logo-microsoft.svg");
+  }
+}
+
+@media (min-width: 700px) {
+  .download-app {
+    width: 300px;
+    margin-left: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: transparent;
+  }
+
+  .download-app__btn {
+    margin-bottom: 60px;
+  }
+
+  .download-app__list {
+    margin-bottom: 50px;
   }
 }
