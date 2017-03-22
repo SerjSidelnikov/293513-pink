@@ -35,10 +35,13 @@
     </header>
 
     <main class="page-form">
-      <div class="page-form__promo">Поделитесь своей историей и получите шанс выграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</div>
+      <div class="page-form__promo">
+        Поделитесь своей историей и получите шанс выграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+        <p class="page-form__promo page-form__promo--hidden">Пожалуйта, заполните форму ниже:</p>
+      </div>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__block">
+        <div class="form__block form__block--name">
           <label class="form__label">
             <span class="form__name-input">Фамилия:</span>
             <input class="form__input" type="text" placeholder="Укажите фамилию*">
@@ -53,44 +56,51 @@
           </label>
         </div>
 
-        <div class="form__block">
-          <fieldset class="form__fieldset">
+        <div class="form__block form__block--checkbox">
+          <fieldset class="form__fieldset form__fieldset--checkbox">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <label class="form__option-label">
-              <input type="checkbox" name="selfie" checked> Сделал селфи с акулой
-            </label>
-            <label class="form__option-label">
-              <input type="checkbox" name="beach" checked> Обгорел на пляже
-            </label>
-            <label class="form__option-label">
-              <input type="checkbox" name="Chuck Norris"> Видел Чака Норриса
-            </label>
-            <label class="form__option-label">
-              <input type="checkbox" name="souvenirs"> Накупил сувениров
-            </label>
-            <label class="form__option-label">
-              <input type="checkbox" name="tower" checked> Удержал башню
-            </label>
-            <label class="form__option-label">
-              <input type="checkbox" name="hotel"> Разгромил отель
-            </label>
+            <div class="form__block-wrapper">
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="selfie" checked> Сделал селфи с акулой
+              </label>
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="beach" checked> Обгорел на пляже
+              </label>
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="Chuck Norris"> Видел Чака Норриса
+              </label>
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="souvenirs"> Накупил сувениров
+              </label>
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="tower" checked> Удержал башню
+              </label>
+              <label class="form__option-label form__option-label--checkbox">
+                <input type="checkbox" name="hotel"> Разгромил отель
+              </label>
+            </div>
           </fieldset>
         </div>
 
-        <div class="form__block">
-          <label class="form__label">
-            <span class="form__name-input">Номер телефона</span>
-            <input class="form__input" type="tel" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="form__label">
-            <span class="form__name-input">Адрес почты</span>
-            <input class="form__input" type="email" placeholder="Введите почту*">
-          </label>
+        <div class="form__block form__block--info">
+          <fieldset class="form__fieldset form__fieldset--info">
+            <legend class="form__legend form__legend--info">Контактная информация</legend>
+            <div class="form__block-wrapper">
+              <label class="form__label form__label--info">
+                <span class="form__name-input form__name-input--info">Номер телефона</span>
+                <input class="form__input form__input--info" type="tel" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="form__label form__label--info">
+                <span class="form__name-input form__name-input--info">Адрес почты</span>
+                <input class="form__input form__input--info" type="email" placeholder="Введите почту*">
+              </label>
+            </div>
+          </fieldset>
         </div>
 
-        <div class="form__block">
+        <div class="form__block form__block--radio">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <legend class="form__legend form__legend--radio">С каким приложением путешествовали?</legend>
             <label class="form__option-label">
               <input type="radio" name="app" checked> Pink для iOS
             </label>
@@ -103,15 +113,17 @@
           </fieldset>
         </div>
 
-        <div class="form__block">
-          <label class="form__label">
-            <span class="form__block-title">Опишите свои эмоции</span>
-            <textarea name="emotions" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </label>
+        <div class="form__block form__block--reviews">
+          <fieldset class="form__fieldset form__fieldset--reviews">
+            <legend class="form__legend form__legend--reviews"><label for="reviews">Опишите свои эмоции</label></legend>
+              <textarea name="emotions" id="reviews" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
         </div>
 
-        <button class="form__btn" type="submit">Отправить форму</button>
-        <span class="form__info"><span class="form__star">*</span> &mdash; обязательные поля</span>
+        <div class="form__block-submit">
+          <button class="form__btn" type="submit">Отправить форму</button>
+          <span class="form__info"><sup class="form__star">*</sup> &mdash; обязательные <span class="form__info--hidden">для заполнения</span> поля</span>
+        </div>
       </form>
     </main>
 
@@ -125,7 +137,7 @@
       </section>
 
       <section class="inner-footer__copyright">
-        Разработано<a href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="30" height="35" alt="HTML Academy"></a>
+        Разработано<a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="30" height="35" alt="HTML Academy"></a>
       </section>
     </footer>
 

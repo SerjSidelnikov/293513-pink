@@ -9,4 +9,35 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .page-form__promo {
+    font-size: 18px;
+    padding: 95px 60px;
+
+    &--hidden {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-form__promo {
+    .container();
+    padding-left: 90px;
+    padding-right: 90px;
+    box-sizing: border-box;
+
+    &--hidden {
+      display: inline;
+      padding: 0;
+    }
+  }
 }
