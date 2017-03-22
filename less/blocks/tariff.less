@@ -1,6 +1,6 @@
 .tariff {
   padding-top: 90px;
-  padding-bottom: 45px;
+  padding-bottom: 42px;
   background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
   background-size: contain;
   text-align: center;
@@ -9,8 +9,9 @@
 }
 
 .tariff__table {
+  margin-bottom: 35px;
   border-collapse: collapse;
-  transform: translateX(-32%);
+  transform: translateX(-31%);
 }
 
 .tariff__empty {
@@ -18,7 +19,7 @@
 }
 
 .tariff__table th {
-  min-width: 90vw;
+  min-width: 86vw;
   padding: 18px 0;
   color: #ffffff;
   background-color: #283645;
@@ -45,7 +46,7 @@
 
 .tariff__cell {
   position: relative;
-  padding: 20px;
+  padding: 14px 23px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -57,7 +58,8 @@
   &--check-on::before {
     content: '';
     position: absolute;
-    right: 10px;
+    top: 11px;
+    right: 13px;
     width: 35px;
     height: 35px;
     background: #ffffff url("../img/icon-yes.svg") no-repeat center;
@@ -66,10 +68,43 @@
   &--check-off::before {
     content: '';
     position: absolute;
-    right: 10px;
+    top: 11px;
+    right: 13px;
     width: 35px;
     height: 35px;
     background: #ffffff url("../img/icon-no.svg") no-repeat center;
+  }
+}
+
+.tariff__control {
+  font-size: 0;
+}
+
+.tariff__control-btn {
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
+  padding: 0;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--active {
+    background-color: #ffffff;
+    border: 3px solid #283645;
   }
 }
 
