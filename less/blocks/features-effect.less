@@ -5,16 +5,20 @@
 @media (min-width: 700px) {
   .features-effect {
     display: block;
-    margin-bottom: 90px;
+    .container();
+    margin-bottom: 125px;
     padding: 0 40px;
-    padding-top: 50px;
+    padding-top: 71px;
   }
 
   .features-effect__wrapper {
-    padding-left: 50%;
+    padding-left: 310px;
   }
 
   .features-effect__title {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
     padding-right: 120px;
     font-weight: 700;
     font-size: 30px;
@@ -22,8 +26,22 @@
     color: #000000;
   }
 
+  .features-effect__content {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+
   .features-effect__href {
     color: #d22856;
+
+    &:hover {
+      color: #283645;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+    }
   }
 }
 

@@ -37,6 +37,7 @@
 
   &--email:hover {
     color: #283645;
+    text-decoration: underline;
     cursor: pointer;
   }
 
@@ -58,10 +59,20 @@
 
   .contacts__item {
     width: 300px;
+    margin-bottom: 44px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
 
     &:last-child {
       width: 290px;
+      margin-bottom: 22px;
     }
+  }
+
+  .contacts__title {
+    margin-bottom: 4px;
   }
 }
 
