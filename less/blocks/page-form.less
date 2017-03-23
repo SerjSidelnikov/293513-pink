@@ -3,7 +3,7 @@
 }
 
 .page-form__promo {
-  padding: 50px 20px;
+  padding: 46px 20px;
   padding-bottom: 0;
   font-weight: 400;
   font-size: 14px;
@@ -17,11 +17,14 @@
 
 @media (min-width: 700px) {
   .page-form__promo {
+    .container();
+    padding: 92px 60px;
+    padding-bottom: 70px;
     font-size: 18px;
-    padding: 95px 60px;
+    box-sizing: border-box;
 
     &--hidden {
-      display: block;
+      display: inline;
       margin: 0;
       padding: 0;
     }
@@ -33,6 +36,7 @@
     .container();
     padding-left: 90px;
     padding-right: 90px;
+    padding-bottom: 80px;
     box-sizing: border-box;
 
     &--hidden {
