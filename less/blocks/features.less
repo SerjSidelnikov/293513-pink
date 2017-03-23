@@ -79,9 +79,7 @@
 
 @media (min-width: 1200px) {
   .features {
-    min-height: 220px;
-    padding: 0 130px;
-    padding-top: 350px;
+    padding: 0;
     text-align: center;
     background-size: contain;
 
@@ -95,19 +93,42 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+
+    &::after {
+      content: none;
+    }
   }
 
   .features__item {
+    position: relative;
     width: 300px;
     padding: 0;
+    padding-top: 355px;
+
+    &:first-child {
+      padding-top: 355px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 355px;
+    }
   }
 
   .features__title {
+    margin-bottom: 24px;
+    padding: 0 30px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .features__content {
+    padding: 0 30px;
     font-size: 18px;
     line-height: 30px;
   }
