@@ -1,56 +1,85 @@
 .features {
-  min-height: 710px;
   padding: 0 20px;
-  padding-top: 70px;
+  padding-top: 74px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  background: url("../img/bg-triangle-white.svg") no-repeat top center, #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat center 505px;
-  background-size: contain, auto;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
+  background-size: contain;
   text-align: center;
 }
 
+.features__wrapper {
+  position: relative;
+  .container();
+  padding-bottom: 290px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 2px;
+  }
+}
+
+.features__item {
+  margin-bottom: 28px;
+}
+
 .features__title {
+  margin: 0;
+  margin-bottom: 9px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
 }
 
+.features__content {
+  margin: 0;
+}
+
 @media (min-width: 700px) {
   .features {
-    position: relative;
-    min-height: 485px;
-    padding: 0 40px;
-    padding-top: 75px;
-    padding-left: 50%;
-    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
+    padding: 0;
     text-align: left;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 40px;
+  .features__wrapper {
+    .container();
+    height: 100%;
+    padding: 0;
+    padding-left: 310px;
+    box-sizing: border-box;
+
+    &::after {
       width: 310px;
-      height: 100%;
-      background: url("../img/iphone-screen-mobile@1x.png") no-repeat left 90px;
-      background-size: 85%;
+      height: 485px;
+      background-position: left 6px;
+      background-size: 87%;
     }
   }
 
   .features__item {
+    margin-bottom: 31px;
 
+    &:first-child {
+      padding-top: 71px;
+    }
+
+    &:last-child {
+      margin-bottom: 43px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .features {
-    min-height: 220px;
-    padding: 0 130px;
-    padding-top: 350px;
+    padding: 0;
     text-align: center;
     background-size: contain;
 
@@ -64,19 +93,42 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+
+    &::after {
+      content: none;
+    }
   }
 
   .features__item {
+    position: relative;
     width: 300px;
     padding: 0;
+    padding-top: 355px;
+
+    &:first-child {
+      padding-top: 355px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 355px;
+    }
   }
 
   .features__title {
+    margin-bottom: 24px;
+    padding: 0 30px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .features__content {
+    padding: 0 30px;
     font-size: 18px;
     line-height: 30px;
   }

@@ -1,6 +1,7 @@
 .download-app {
   .container();
-  padding: 25px 0;
+  padding-top: 29px;
+  padding-bottom: 15px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -12,8 +13,8 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 40px;
-  padding: 13px 0;
+  margin-bottom: 35px;
+  padding: 15px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -22,12 +23,22 @@
   border: 3px solid #ffffff;
   border-radius: 25px;
   box-sizing: border-box;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download-app__list {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 35px;
+  padding: 0 20px;
+  margin-bottom: 20px;
   font-size: 0;
 }
 
@@ -61,10 +72,25 @@
   }
 
   .download-app__btn {
-    margin-bottom: 60px;
+    width: 300px;
+    margin-bottom: 48px;
   }
 
   .download-app__list {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
+    padding: 0 29px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app__btn {
+    margin-bottom: 67px;
+    font-size: 21px;
+    line-height: 21px;
+    border-radius: 30px;
+  }
+
+  .download-app__list {
+    margin-bottom: 54px;
   }
 }
