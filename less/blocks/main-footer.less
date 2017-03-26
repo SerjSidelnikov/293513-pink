@@ -13,7 +13,15 @@
 }
 
 .main-footer__map {
-  background: #e8e5df url("../img/bg-map-mobile@1x.png") no-repeat;
+  min-height: 180px;
+  background: #e8e5df url("../../img/bg-map-mobile@1x.png") no-repeat;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-footer__map {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .main-footer__bottom {

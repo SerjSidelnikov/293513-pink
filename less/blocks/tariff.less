@@ -1,7 +1,7 @@
 .tariff {
   padding-top: 90px;
   padding-bottom: 42px;
-  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
+  background: #f2f2f2 url("../../img/bg-triangle-white.svg") no-repeat top center;
   background-size: contain;
   text-align: center;
   text-transform: uppercase;
@@ -40,7 +40,18 @@
 }
 
 .tariff__header--hit {
-  background: url("../img/bg-hit.svg") no-repeat top left;
+  position: relative;
+  background: url("../../img/bg-hit.svg") no-repeat top left;
+
+  &::before {
+    content: 'хит';
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 30px;
+    transform: rotate(-45deg);
+  }
 }
 
 
