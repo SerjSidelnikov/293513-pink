@@ -104,14 +104,10 @@
 
 @media (min-width: 1200px) {
   .reviews {
-    .container();
     position: relative;
-
-    &::before {
-      content: '';
-      display: block;
-      height: 114px;
-    }
+    .container();
+    padding-top: 114px;
+    background: url("../../img/icon-quotes.svg") no-repeat top center;
   }
 
   .reviews__item {
@@ -129,15 +125,31 @@
 
   .reviews__slide {
     position: absolute;
-    bottom: 128px;
+    bottom: 116px;
     display: block;
+    width: 25px;
+    height: 45px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
 
     &--prev {
-      left: 10px;
+      left: 39px;
+      background: transparent url("../../img/icon-review-arrow-left.svg") no-repeat center;
     }
 
     &--next {
-      right: 10px;
+      right: 39px;
+      background: transparent url("../../img/icon-review-arrow-right.svg") no-repeat center;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 
