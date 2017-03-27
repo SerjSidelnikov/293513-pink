@@ -162,10 +162,20 @@
     margin-bottom: 50px;
   }
 
+  .gallery-post__img {
+
+    &--panorama::before {
+      top: 55px;
+      right: 130px;
+    }
+  }
+
   .gallery-post__description {
+    padding-left: 28px;
 
     &--panorama {
       .container();
+      min-height: 95px;
     }
   }
 }
