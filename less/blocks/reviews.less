@@ -34,6 +34,14 @@
 
 .reviews__content {
   margin: 0;
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
 }
 
 .reviews__slide {
@@ -121,6 +129,14 @@
 
   .reviews__age {
     font-size: 18px;
+  }
+
+  .reviews__content {
+
+    &::before,
+    &::after {
+      content: '';
+    }
   }
 
   .reviews__slide {
