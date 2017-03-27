@@ -11,9 +11,27 @@
   }
 
   .features-effect__wrapper {
+    position: relative;
     .container();
     padding-left: 310px;
     box-sizing: border-box;
+
+    &:before {
+      content: '24';
+      position: absolute;
+      top: -37px;
+      left: 0;
+      width: 280px;
+      height: 280px;
+      padding-top: 89px;
+      padding-left: 64px;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 124px;
+      color: #d22856;
+      background: url("../../img/icon-timer.svg") no-repeat;
+      box-sizing: border-box;
+    }
   }
 
   .features-effect__title {
@@ -61,6 +79,17 @@
     margin-bottom: 55px;
     padding-left: 366px;
     box-sizing: border-box;
+
+    &:before {
+      top: -94px;
+      width: 345px;
+      height: 345px;
+      padding-top: 113px;
+      padding-left: 80px;
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 150px;
+    }
   }
 
   .features-effect__title {

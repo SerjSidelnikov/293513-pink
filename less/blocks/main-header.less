@@ -5,7 +5,7 @@
 
 .main-header__bottom {
   min-height: 237px;
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+  background: #1d2631 url("../../img/bg-back-mobile@1x.jpg") no-repeat top center;
 
   &--index::before {
     content: '';
@@ -13,7 +13,19 @@
     width: 320px;
     height: 461px;
     margin: 0 auto;
-    background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
+    background: transparent url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-header__bottom {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+
+    &--index::before {
+      background-image: url("../../img/iphone-hand-mobile@2x.png");
+      background-size: 258px auto;
+    }
   }
 }
 
@@ -21,6 +33,27 @@
   width: 74px;
   height: 24px;
   margin: 0;
+  cursor: pointer;
+}
+
+.main-header__logo-svg {
+  position: relative;
+  top: -17px;
+  left: -72px;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-header__svg-desktop,
+.main-header__svg-tablet {
+  display: none;
 }
 
 .main-header__title {
@@ -40,8 +73,7 @@
 
   .main-header__bottom {
     min-height: 440px;
-    background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center -40px;
-    background-size: 1200px;
+    background: #1d2631 url("../../img/bg-back-tablet@1x.jpg") no-repeat top center;
 
     &--index {
       position: relative;
@@ -49,8 +81,6 @@
       min-height: 710px;
       padding: 0 40px;
       padding-bottom: 20px;
-      background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center;
-      background-size: 1300px;
     }
 
     &--index::before {
@@ -61,9 +91,33 @@
       z-index: -1;
       .container();
       height: 730px;
-      background-position: right bottom;
-      background-size: 500px;
+      background: url("../../img/iphone-hand-tablet@1x.png") no-repeat bottom;
     }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-header__bottom {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+
+      &--index::before {
+        background-image: url("../../img/iphone-hand-tablet@2x.png");
+        background-size: 700px auto;
+      }
+    }
+  }
+
+  .main-header__logo {
+    width: 146px;
+    height: 55px;
+  }
+
+  .main-header__logo-svg {
+    position: static;
+  }
+
+  .main-header__svg-tablet {
+    display: inline;
   }
 
   .main-header__wrapper {
@@ -97,8 +151,7 @@
 
   .main-header__bottom {
     min-height: 395px;
-    background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center -360px;
-    background-size: 2000px;
+    background: #1d2631 url("../../img/bg-back-desktop@1x.jpg") no-repeat top center;
 
     &--index {
       min-height: 855px;
@@ -107,19 +160,44 @@
 
     &--index::before {
       .container();
+      left: 0;
+      right: 0;
       height: 850px;
-      background-size: 600px;
+      background: url("../../img/iphone-hand-desktop@1x.png") no-repeat 16px bottom;
     }
   }
 
-  .main-header__title--index {
-    width: 240px;
-    margin-bottom: 50px;
-    padding-top: 220px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 50px;
-    line-height: 60px;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-header__bottom {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+
+      &--index::before {
+        background-image: url("../../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
+    }
+  }
+
+  .main-header__svg-tablet {
+    display: none;
+  }
+  .main-header__svg-desktop {
+    display: inline;
+  }
+
+  .main-header__title {
+    padding-top: 174px;
+
+    &--index {
+      width: 240px;
+      margin-bottom: 50px;
+      padding-top: 220px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 
   .main-header__title--form {
