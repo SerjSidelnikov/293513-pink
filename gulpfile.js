@@ -19,12 +19,12 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
+      mqpacker({
+        sort: false
+      }),
       autoprefixer({browsers: [
         "last 2 versions"
-      ]}),
-      mqpacker({
-        sort: true
-      })
+      ]})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
