@@ -34,6 +34,14 @@
 
 .reviews__content {
   margin: 0;
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
 }
 
 .reviews__slide {
@@ -49,6 +57,7 @@
   height: 12px;
   margin-right: 13px;
   padding: 0;
+  font-size: 0;
   background-color: rgba(40, 54, 69, 0.3);
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -121,6 +130,14 @@
 
   .reviews__age {
     font-size: 18px;
+  }
+
+  .reviews__content {
+
+    &::before,
+    &::after {
+      content: '';
+    }
   }
 
   .reviews__slide {

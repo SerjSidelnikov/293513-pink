@@ -7,6 +7,10 @@
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  &--nojs {
+    background-color: #283645;
+  }
 }
 
 .main-nav__control {
@@ -18,6 +22,11 @@
   &--closed {
     padding: 21px 20px;
     box-shadow: none;
+  }
+
+  &--nojs {
+    padding: 22px 20px;
+    box-shadow: 0 1px #000000;
   }
 }
 
@@ -60,6 +69,10 @@
   &--opened::after {
     transform: rotate(-45deg);
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .main-nav__toggle--closed:hover::before {
@@ -101,6 +114,10 @@
 
   &--closed {
     display: none;
+  }
+
+  &--nojs {
+    display: block;
   }
 }
 
