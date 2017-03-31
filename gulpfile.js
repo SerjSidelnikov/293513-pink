@@ -20,7 +20,7 @@ gulp.task("style", function() {
     .pipe(less())
     .pipe(postcss([
       mqpacker({
-        sort: false
+        sort: true
       }),
       autoprefixer({browsers: [
         "last 2 versions"
